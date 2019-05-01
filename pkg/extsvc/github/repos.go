@@ -325,6 +325,10 @@ query Repository($id: ID!) {
 	return result.Node, nil
 }
 
+func (c *Client) getUserRepositories(ctx context.Context, token string) ([]*Repository, error) {
+	// TODO: user v3 api
+}
+
 func (c *Client) ListPublicRepositories(ctx context.Context, sinceRepoID int64) ([]*Repository, error) {
 	repos, err := c.getPublicRepositories(ctx, sinceRepoID)
 	if err != nil {
