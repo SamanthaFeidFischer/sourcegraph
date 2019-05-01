@@ -333,6 +333,7 @@ func (p *Provider) fetchUserRepo(ctx context.Context, userAccount *extsvc.Extern
 
 func (p *Provider) fetchUserRepos(ctx context.Context, userAccount *extsvc.ExternalAccount, repos map[authz.Repo]struct{}) (canAccess map[string]bool, isPublic map[string]bool, err error) {
 	// TODO
+	return nil, nil, nil
 }
 
 // FetchAccount implements the authz.Provider interface. It always returns nil, because the GitHub

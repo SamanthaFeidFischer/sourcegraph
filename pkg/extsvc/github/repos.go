@@ -116,7 +116,15 @@ func (c *Client) GetRepositoryByNodeIDNoCache(ctx context.Context, token, id str
 
 // TODO(beyang): caching
 func (c *Client) getRepositoriesByNodeIDs(ctx context.Context, token, ids []string) (found map[string]*Repository, missingIDs []string, err error) {
+	snippetTemplate := `r1:node(id:%q) {
+    ... on Repository {
+			...RepositoryFields
+    }
+  }
+`
+
 	// NEXT
+	return nil, nil, nil
 }
 
 func (c *Client) getRepositoryByNodeID(ctx context.Context, token, id string, nocache bool) (*Repository, error) {
@@ -328,10 +336,6 @@ query Repository($id: ID!) {
 		return nil, ErrNotFound
 	}
 	return result.Node, nil
-}
-
-func (c *Client) getUserRepositories(ctx context.Context, token string) ([]*Repository, error) {
-	// TODO: user v3 api
 }
 
 func (c *Client) ListPublicRepositories(ctx context.Context, sinceRepoID int64) ([]*Repository, error) {
