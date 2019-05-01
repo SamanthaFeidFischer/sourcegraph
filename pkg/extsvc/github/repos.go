@@ -114,6 +114,11 @@ func (c *Client) GetRepositoryByNodeIDNoCache(ctx context.Context, token, id str
 	return c.getRepositoryByNodeID(ctx, token, id, true)
 }
 
+// TODO(beyang): caching
+func (c *Client) getRepositoriesByNodeIDs(ctx context.Context, token, ids []string) (found map[string]*Repository, missingIDs []string, err error) {
+	// NEXT
+}
+
 func (c *Client) getRepositoryByNodeID(ctx context.Context, token, id string, nocache bool) (*Repository, error) {
 	if GetRepositoryByNodeIDMock != nil {
 		return GetRepositoryByNodeIDMock(ctx, token, id)
