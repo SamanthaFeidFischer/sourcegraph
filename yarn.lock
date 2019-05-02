@@ -14462,10 +14462,10 @@ typescript@3.2.x:
   resolved "https://registry.npmjs.org/typescript/-/typescript-3.2.4.tgz#c585cb952912263d915b462726ce244ba510ef3d"
   integrity sha512-0RNDbSdEokBeEAkgNbxJ+BLwSManFy9TeXz8uW+48j/xhEXv1ePME60olyzw2XzUqUBNAYFeJadIqAgNqIACwg==
 
-typescript@3.5.0-dev.20190406:
-  version "3.5.0-dev.20190406"
-  resolved "https://registry.npmjs.org/typescript/-/typescript-3.5.0-dev.20190406.tgz#9beda156dc682c342574796fa1212e13f5d0de2d"
-  integrity sha512-yBCj+5+CYlR+9tCP9IG784gcacpYNFNEQpXtwzONk7YonzT0KXn6qp2UhqpwKyJi0QC2f73k2LuVAsNwa/UXnA==
+typescript@3.5.0-dev.20190502:
+  version "3.5.0-dev.20190502"
+  resolved "https://registry.npmjs.org/typescript/-/typescript-3.5.0-dev.20190502.tgz#5de44f0fb4c787b2749bdcedd975497e7436e8ae"
+  integrity sha512-txMRX6xDYEDIjGxEBcnhGOY9EILoKobAS+FBH3bdSsq/GQugMR1CPr6mn+daMDW5pLDV+UmhsA3PndzHp3XODg==
 
 ua-parser-js@^0.7.18:
   version "0.7.19"
